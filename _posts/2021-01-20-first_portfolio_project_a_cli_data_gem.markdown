@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "First Portfolio Project — A CLI Data Gem"
-date:       2021-01-20 18:16:54 +0000
+date:       2021-01-20 13:16:55 -0500
 permalink:  first_portfolio_project_a_cli_data_gem
 ---
 
