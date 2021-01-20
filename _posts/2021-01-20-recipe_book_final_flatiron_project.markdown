@@ -33,6 +33,7 @@ React is a library written in Javascript, but it sets clear rules about how the 
 
 **Container components vs. Functional/Presentational Components**
 React components are organized further into Container components and presentational components.
+
 **Container components:**
 * how things work, the logic
 * are stateful
