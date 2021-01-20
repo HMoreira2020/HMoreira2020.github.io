@@ -12,8 +12,8 @@ It’s been about a month since I started Flatiron’s Part-time Online Software
 Provide a CLI
 Your CLI application must access data from a webpade to demonstrate scraping or the use of an API
 The data provided must go one level deep (For example, the user sees a list of information, makes a choice, and then sees more details)
-**
-Step One: What would my project be on?**
+
+**Step One: What would my project be on?**
 My first idea was to scrape a yoga studio website for class style info and schedule. Unfortunately COVID-19 has shut down most yoga studios and they have converted to online classes only. When I looked at my favorite studio for class styles, there were only “Live Stream Class via Zoom” classes listed. I decided to find a new idea.
 I looked for a surf retreat website because my husband and I miss surfing and are dreaming of a retreat! We moved from California to Arizona so I could complete this program. The idea was that we would save money in rent in order to pay for the tuition payments and childcare I needed so I could get the work done. We didn’t see coronavirus coming. Now, without my kids in school, I high-five my husband around 5pm to hand off the kids and I work until around 11pm. I can’t think of anything more glorious than a surf retreat at the moment!
 
@@ -26,8 +26,8 @@ I watched both Beth and Avi’s videos that were recommended in the [BONUS] CLI 
 By watching the cli videos I was able create a project skeleton by opening Sandbox and using the bundle gem command. I had to do this twice, because the first time I ran bundle gem swell-retreats-cli. Using the ‘ - ‘ instead of ‘ _ ‘ created problems, so I went back and recreated my gem by running bundle gem swell_retreats. Just to reiterate, use underscores when creating your GEM_NAME.
 I then pushed my repo up to Github and ran cd swell_retreats to cd into the directory. I edited the README.me file according to the project requirements, and added dependencies like nokogiri, open-uri and pry in the gemspec file. I ran bundle install, which makes sure the gems I need are there in development, staging and production. I made sure to make Git commit messages early and often. Also, I’ll be doing a blog post on Git commit messages. It’s a science that I have not yet mastered!
 None of this happened without a few hiccups, but once I had it all setup I was ready to build my classes.
-**
-Step four: Creating my classes and their methods**
+
+**Step four: Creating my classes and their methods**
 I knew from creating a flow chart that I needed a Scraper class, a Retreat class, and a CLI class.
 I stubbed out the methods in each class, mostly building the CLI class to see it working with basic methods. I then tackled the Scraper class by using binding.pry and the Scraper Check Tool in replit that I mentioned above. I built Scraper.scrape_homepage to scrape the homepage for the list of upcoming retreats. The return value of this method was an array of hashes, each representing a retreat on the list with key/value pairs that represented the retreat’s name and date. I then built Scraper.scrape_retreat_details to get more detail on a retreat. The return value of this method was a hash representing data for one retreat. Once I had the Scraper class built I worked on the Retreat class to build retreat objects using the data I scraped.
 
